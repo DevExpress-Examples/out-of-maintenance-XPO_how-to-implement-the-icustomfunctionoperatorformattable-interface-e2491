@@ -1,3 +1,9 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [DatePartFunction.cs](./CS/DatePartFunction.cs) (VB: [DatePartFunction.vb](./VB/DatePartFunction.vb))
+* [Program.cs](./CS/Program.cs) (VB: [Program.vb](./VB/Program.vb))
+<!-- default file list end -->
 # How to implement the ICustomFunctionOperatorFormattable interface
 
 
