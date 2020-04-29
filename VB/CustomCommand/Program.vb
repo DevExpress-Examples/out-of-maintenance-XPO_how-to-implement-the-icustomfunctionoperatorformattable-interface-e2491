@@ -15,7 +15,7 @@ Namespace CustomCommand
 		Private Sub New()
 		End Sub
 		Shared Sub Main()
-			Dim provider As ConnectionProviderSql = CType(XpoDefault.GetConnectionProvider(AccessConnectionProvider.GetConnectionString("..\..\CustomCommand.mdb"), AutoCreateOption.DatabaseAndSchema), ConnectionProviderSql)
+			Dim provider As ConnectionProviderSql = CType(XpoDefault.GetConnectionProvider(SQLiteConnectionProvider.GetConnectionString("CustomCommand.sqlite"), AutoCreateOption.DatabaseAndSchema), ConnectionProviderSql)
 			provider.RegisterCustomFunctionOperator(New GetMonthFunction())
 			Dim dict As XPDictionary = New ReflectionDictionary()
 			dict.CustomFunctionOperators.Add(New GetMonthFunction())

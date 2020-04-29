@@ -11,8 +11,8 @@ Namespace DXSample
 		#Region "ICustomFunctionOperatorFormattable Members"
 
 		Private Function ICustomFunctionOperatorFormattable_Format(ByVal providerType As Type, ParamArray ByVal operands() As String) As String Implements ICustomFunctionOperatorFormattable.Format
-			If providerType Is GetType(AccessConnectionProvider) Then
-				Return String.Format("datepart(""m"", {0})", operands(0))
+			If providerType Is GetType(SQLiteConnectionProvider) Then
+				Return String.Format("strftime('%m', {0})", operands(0))
 			End If
 			Throw New NotSupportedException(String.Concat("This provider is not supported: ", providerType.Name))
 		End Function

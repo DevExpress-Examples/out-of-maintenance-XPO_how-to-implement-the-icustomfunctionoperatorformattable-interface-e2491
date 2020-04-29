@@ -13,7 +13,7 @@ namespace CustomCommand {
     static class Program {
         static void Main() {
             ConnectionProviderSql provider = 
-                (ConnectionProviderSql)XpoDefault.GetConnectionProvider(AccessConnectionProvider.GetConnectionString(@"..\..\CustomCommand.mdb"),
+                (ConnectionProviderSql)XpoDefault.GetConnectionProvider(SQLiteConnectionProvider.GetConnectionString(@"CustomCommand.sqlite"),
                 AutoCreateOption.DatabaseAndSchema);
             provider.RegisterCustomFunctionOperator(new GetMonthFunction());
             XPDictionary dict = new ReflectionDictionary();

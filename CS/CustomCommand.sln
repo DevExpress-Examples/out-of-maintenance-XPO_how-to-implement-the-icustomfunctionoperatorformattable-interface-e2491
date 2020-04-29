@@ -1,6 +1,10 @@
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomCommand", "CustomCommand.csproj", "{10027A46-93A2-48A4-83C4-96424CC44AF1}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomCommand", "CustomCommand\CustomCommand.csproj", "{10027A46-93A2-48A4-83C4-96424CC44AF1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomCommand_NetCore", "CustomCommand_NetCore\CustomCommand_NetCore.csproj", "{44635076-D197-4794-B3EB-F09CCDE04277}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -12,8 +16,15 @@ Global
 		{10027A46-93A2-48A4-83C4-96424CC44AF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10027A46-93A2-48A4-83C4-96424CC44AF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{10027A46-93A2-48A4-83C4-96424CC44AF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44635076-D197-4794-B3EB-F09CCDE04277}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44635076-D197-4794-B3EB-F09CCDE04277}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44635076-D197-4794-B3EB-F09CCDE04277}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44635076-D197-4794-B3EB-F09CCDE04277}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EE77DF27-A171-471B-B127-8B8CCDD3ED2D}
 	EndGlobalSection
 EndGlobal

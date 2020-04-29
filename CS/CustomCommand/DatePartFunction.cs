@@ -9,8 +9,8 @@ namespace DXSample {
         #region ICustomFunctionOperatorFormattable Members
 
         string ICustomFunctionOperatorFormattable.Format(Type providerType, params string[] operands) {
-            if (providerType == typeof(AccessConnectionProvider))
-                return string.Format("datepart(\"m\", {0})", operands[0]);
+            if (providerType == typeof(SQLiteConnectionProvider))
+                return string.Format("strftime('%m', {0})", operands[0]);
             throw new NotSupportedException(string.Concat("This provider is not supported: ", providerType.Name));
         }
 
