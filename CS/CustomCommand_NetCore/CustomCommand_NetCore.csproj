@@ -1,19 +1,15 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
-
   <ItemGroup>
     <Compile Include="..\CustomCommand\DatePartFunction.cs" Link="DatePartFunction.cs" />
     <Compile Include="..\CustomCommand\PersistentClasses.cs" Link="PersistentClasses.cs" />
     <Compile Include="..\CustomCommand\Program.cs" Link="Program.cs" />
   </ItemGroup>
-  
   <ItemGroup>
     <PackageReference Include="DevExpress.Xpo" Version="19.2.7" />
     <PackageReference Include="System.Data.SQLite.Core" Version="1.0.112.2" />
   </ItemGroup>
-
 </Project>
