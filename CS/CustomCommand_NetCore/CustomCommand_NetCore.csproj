@@ -9,7 +9,7 @@
     <Compile Include="..\CustomCommand\Program.cs" Link="Program.cs" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="DevExpress.Xpo" Version="19.2.10" />
+    <PackageReference Include="DevExpress.Xpo" Version="19.2.11" />
     <PackageReference Include="System.Data.SQLite.Core" Version="1.0.112.2" />
   </ItemGroup>
 </Project>
